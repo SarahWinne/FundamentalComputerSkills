@@ -4,15 +4,18 @@ import desktopIcon from '../Assets/DesktopIconPlaceholder.png'
 
 function Desktop() {
     return <>
-        {/* Put HTML here */}
-        {/* <h1>Desktop Page</h1> */}
         <div className="desktop-container">
-            <h1>Desktop</h1>
-            <AppIcon name="NewAppName" desktopIcon={desktopIcon} iconStyling={"desktop-icon-styling"}/>
+            <AppIcon name="App Name 1" icon={desktopIcon}/>
+            <AppIcon name="App Name 2 App Name 2" icon={desktopIcon}/>
+            <AppIcon name="LongLongLongApp Name 3" icon={desktopIcon}/>
+
+
 
 
             <div className="navbar">
-                Icons will go here
+                <AppIcon name="App Name 1" icon={desktopIcon} variant = "taskbar"/>
+                <AppIcon name="App Name 2" icon={desktopIcon} variant = "taskbar"/>
+                <AppIcon name="App Name 3" icon={desktopIcon} variant = "taskbar"/>
             </div>
         </div>
     </> 
