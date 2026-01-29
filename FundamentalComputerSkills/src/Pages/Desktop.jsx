@@ -1,8 +1,10 @@
 import AppIcon from '../Components/AppIcon.jsx'
 //import myImage from '../Assets/background-image.jpg'
+import Clock from '../Components/Clock.jsx';
 import desktopIcon from '../Assets/DesktopIconPlaceholder.png'
 
 function Desktop() {
+
     return <>
         <div className="desktop-container">
             <AppIcon name="App Name 1" icon={desktopIcon}/>
@@ -10,7 +12,7 @@ function Desktop() {
             <AppIcon name="LongLongLongApp Name 3" icon={desktopIcon}/>
 
 
-
+            
 
             <div className="navbar">
                 <div className="navbar-left">
@@ -23,10 +25,11 @@ function Desktop() {
                 </div>
                 <div className="navbar-right">
                     {/* Wifi, sound, bluetooth, battery, clock, etc */}
-                    <p>4:30 PM</p>
+                    <Clock />
                 </div>
             </div>
         </div>
     </> 
 }
+
 export default Desktop;

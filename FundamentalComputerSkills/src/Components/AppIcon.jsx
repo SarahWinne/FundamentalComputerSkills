@@ -11,7 +11,9 @@ function AppIcon({ name, icon, variant="desktop" }) {
 
             {/* Tooltip for both desktop and taskbar */}
             <div className={`app-icon-tooltip ${variant}`}>{name}</div>
+
         </div>
+        
 
     );
 }
